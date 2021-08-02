@@ -1,0 +1,254 @@
+@CHARSET "UTF-8";
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-weight: 400;
+  list-style-type: none;
+  font-style: normal;
+}
+
+#my a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#my nav {
+  line-height: 1.2;
+  font-family: "Space Mono", monospace;
+  background: #1d1f20;
+  padding: 25px 35px;
+  width: 45%;
+  top: calc(50vh - 247px);
+  left: calc(50vw - 150px);
+  position: fixed;
+  border-radius: 16px;
+  box-shadow: 0 0 60px -15px black;
+  transform: scale(0) rotate(360deg);
+  transition: all 0.75s;
+  font-size: 1em;
+}
+
+#my {
+	position: fixed;
+}
+
+#my img {
+	border-radius: 30%;
+    right: 10%;
+}
+
+#my nav.menu_active {
+  transform: scale(1) rotate(0deg);
+}
+
+#my nav > ol > li {
+  margin: 20px 0;
+  color: #b5bc67;
+}
+
+#my nav > ol > li:first-of-type {
+  color: #efc371;
+}
+
+#my nav > ol > li > ol {
+  margin: 10px 0 0 20px;
+  border-left: 1px solid #4d4d4c;
+  color: #ae94c0;
+}
+
+#my nav > ol > li > ol > li {
+  margin: 7px 0;
+  padding-left: 20px;
+}
+
+#my nav a:hover {
+  color: #dd925f;
+}
+
+#my h3 {
+  position: fixed;
+  font-family: Montserrat, sans-serif;
+  font-size: 60px;
+  color: #c081e1;
+  top: calc(50vh - 40px);
+  right: calc(50vw - 476px);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#my h3:hover {
+  border-bottom: 6px dotted #c081e1;
+  padding-bottom: 10px;
+  top: calc(50vh - 50px);
+}
+
+#my p {
+  font-family: "Roboto Mono", monospace;
+  float: right;
+  cursor: pointer;
+  font-size: 16px;
+  color: #cfd8dc;
+  transition: all 0.2s;
+}
+
+#my p:hover {
+  border-bottom: 2px dotted #cfd8dc;
+  padding-bottom: 5px;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+figure {
+  margin: 0;
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-item {
+  position: relative;
+  scroll-snap-align: start;
+  height: 100vh;
+  background-color: #212121;
+}
+.scroll-item:nth-child(2) {
+  background-color: #E040FB;
+}
+.scroll-item:nth-child(1) h2 {
+  background-color: #eecccc;
+}
+.scroll-item:nth-child(2) h2 {
+  background-color: #eeeecc;
+}
+.scroll-item:nth-child(3) h2 {
+  background-color: #cceecc;
+}
+.scroll-item:nth-child(4) h2 {
+  background-color: #cceeee;
+}
+.scroll-item:nth-child(3n) .scroll-item__bg-image img {
+  object-position: bottom;
+}
+.scroll-item h2 {
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 1rem;
+  background-color: #eecccc;
+  color: #a1aae6;
+  z-index: 1;
+}
+
+.scroll-item__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+.scroll-item__content span {
+  display: block;
+}
+
+.scroll-item__inner {
+  border: 2px solid white;
+  padding: 1rem;
+  transition: opacity 800ms, transform 800ms;
+  opacity: 0;
+  transform: translate3d(0, -1.5rem, 0);
+}
+.scroll-item__inner.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.scroll-item__bg-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.scroll-item__bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.scroll-item__bg-image::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: background 1000ms;
+}
+.scroll-item__bg-image.is-visible::after {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.section input[id*="slide"]{
+	display: none;
+}
+
+.section .slidewrap_left {
+	max-width: 50%;
+	margin: 5%;
+	overflow: hidden;
+   	margin-right: 0px;
+}
+
+.section .slidewrap_right {
+	max-width: 50%;
+	margin: 5%;
+	overflow: hidden;
+   	margin-left: 0px;
+}
+
+.section .slidelist {
+	white-space: nowrap;
+	font-size: 0;
+	padding: 0;
+}
+
+.section .slidelist > li {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	transitino: all .5s;
+}
+
+.section .slidelist > li > a {
+	display: block;
+	position: relative;
+}
+
+.section .slidelist > li > a img{
+	width: 100%
+}
+
+.slidewrap_left {
+    float: left;
+}
+
+.slidewrap_right {
+    float: right;
+}
