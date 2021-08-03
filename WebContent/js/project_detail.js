@@ -114,21 +114,26 @@ $(function() {
 			{
 				action : 'type',
 				strings : [ "주제" ],
-				output : '&nbsp;쇼핑몰<br><br>',
+				output : '&nbsp;쇼핑몰<br>',
 				postDelay : 1000
 			},
 			{
 				action : 'type',
-				strings : [ "500 Internal Error" ],
-				output : '<span class="gray">Coded by cluzier +CodePen.io</><br>&nbsp;',
+				strings : [ "사용 도구" ],
+				output : '&nbsp;사용 툴 : Eclipse, MySQL Workbench<br>&nbsp;사용 언어 : Java, jsp, HTML, CSS, SQL<br>',
 				postDelay : 1000
 			},
 			{
 				action : 'type',
-				strings : [
-						"These are not the error codes you're looking for.",
-						'Please either report this error to an administrator or return back and forget you were here...' ],
+				strings : ["구현 방식" ],
+				output : '&nbsp;model1<br>',
 				postDelay : 2000
+			},
+			{
+				action : 'type',
+				strings : ["구현 기능" ],
+				output : '&nbsp;구현 기능 : 회원 CRUD, 게시판 CRUD<br>&nbsp;사용 API : 우편번호 API<br>',
+				postDelay : 2500
 			}
 
 	];
@@ -181,26 +186,38 @@ $(function() {
 			{
 				action : 'type',
 				strings : [ "주제" ],
-				output : '&nbsp;커뮤니티 사이트(DeCo - Developer Completion)<br><br>',
+				output : '&nbsp;커뮤니티 사이트(DeCo - Developer Completion)<br>',
 				postDelay : 1000
 			},
 			{
 				action : 'type',
-				strings : [ "사용 언어" ],
-				output : '<span class="gray">Coded by cluzier +CodePen.io</><br>&nbsp;',
+				strings : [ "사용 도구" ],
+				output : '&nbsp;사용 툴 : Eclipse, MySQL Workbench<br>&nbsp;사용 언어 : Java, jsp, HTML, CSS, SQL<br>',
 				postDelay : 1000
 			},
 			{
 				action : 'type',
-				strings : [
-						"These are not the error codes you're looking for.",
-						'Please either report this error to an administrator or return back and forget you were here...' ],
+				strings : ["구현 방식" ],
+				output : '&nbsp;model2<br>',
 				postDelay : 2000
+			},
+			{
+				action : 'type',
+				strings : ["구현 기능" ],
+				output : '&nbsp;구현 기능 : 회원 CRUD, 게시판 CRUD, 팀(방)만들기, 팀 채팅 서비스,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FullCalendar 활용, Workbench 이벤트 사용<br>&nbsp;사용 API : 우편번호 API, 카카오톡/Git 로그인, 네이버 스마트 Editor<br>',
+				postDelay : 2500
+			},
+			{
+				action : 'type',
+				strings : ["호스팅" ],
+				output : '&nbsp;호스팅 : 카페24 사용<br>&nbsp;링크 : <a href="http://itwillbs7.cafe24.com/deco/main.us" target="_blank">http://itwillbs7.cafe24.com/deco/main.us</a><br>',
+				postDelay : 2500
 			}
 
 	];
 	runScripts2(data, 0);
 });
+
 
 function runScripts2(data, pos) {
 	var prompt = $('.prompt2'), script = data[pos];

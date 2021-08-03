@@ -18,19 +18,19 @@
 }
 
 #my nav {
-  line-height: 1.2;
-  font-family: "Space Mono", monospace;
-  background: #1d1f20;
-  padding: 25px 35px;
-  width: 45%;
-  top: calc(50vh - 247px);
-  left: calc(50vw - 150px);
-  position: fixed;
-  border-radius: 16px;
-  box-shadow: 0 0 60px -15px black;
-  transform: scale(0) rotate(360deg);
-  transition: all 0.75s;
-  font-size: 1em;
+  line-height: 0.9;
+    font-family: "Space Mono", monospace;
+    background: #1d1f20;
+    padding: 25px 35px;
+    width: 45%;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 130px);
+    position: fixed;
+    border-radius: 16px;
+    box-shadow: 0 0 60px -15px black;
+    transform: scale(0) rotate(360deg);
+    transition: all 0.75s;
+    font-size: 1em;
 }
 
 #my {
@@ -169,8 +169,10 @@ figure {
   border: 2px solid white;
   padding: 1rem;
   transition: opacity 800ms, transform 800ms;
-  opacity: 0;
   transform: translate3d(0, -1.5rem, 0);
+  width: 50%;
+  text-align: center;
+  font-size: 2em;
 }
 .scroll-item__inner.is-visible {
   opacity: 1;
@@ -280,10 +282,18 @@ body {
 [class*=terminal-window] {
   text-align: left;
   width: 37.5rem;
-  height: 26.5rem;
+  height: 24rem;
   border-radius: .625rem;
   margin: auto;
   position: relative;
+}
+
+[class*=terminal-window] a:LINK {
+	color: white;
+}
+
+[class*=terminal-window] a:VISITED {
+	color: white;
 }
 
 [class*=terminal-window] header {
