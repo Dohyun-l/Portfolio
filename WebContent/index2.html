@@ -2,9 +2,255 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>포트폴리오</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link href="css/main.css" rel="stylesheet">
+
 </head>
 <body>
+	<div id="content">
+
+		<ul class="nav nav-pills nav-justified">
+			<li class="active"><a href="#">PORTFOLIO</a></li>
+			<li><a href="#">Profile</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#project">Project</a></li>
+		</ul>
+
+		<div id="profile" class="row text-center">
+			<h2>Profile</h2>
+			<div id="profile_img" class="col-sm-4 col-md-5 col-lg-4">
+				<img src="img/leedohyun.jpg" width="100%" class="img-rounded">
+			</div>
+			<div id="profile_info" class="col-sm-8 col-md-7 col-lg-8 text-left">
+				<h3>정보</h3>
+				<p>
+					&nbsp;이름 : 이도현<br> &nbsp;생년월일 : 1995.12.04<br> &nbsp;이메일
+					: ehgus9443@naver.com
+				</p>
+				<h3>학력</h3>
+				<p>
+					&nbsp;2011.03~2014.02 창원중앙고등학교 졸업<br> &nbsp;2014.03~2020.02
+					동명대학교 로봇시스템 공학과 졸업
+				</p>
+				<h3>자격증</h3>
+				<p>
+					&nbsp;1종 대형 운전 면허증<br> &nbsp;정보처리기사(필기 합격)
+				</p>
+				<h3>수상 경력</h3>
+				<p>
+					&nbsp;2014 교내 프로그래밍 경진대회 대상(동명대학교)<br> &nbsp;2021 아이티윌 부산교육센터
+					팀프로젝트 최우수상
+				</p>
+			</div>
+		</div>
+
+		<div id="skills">
+			<h2>Skills</h2>
+			<br> <br> JAVA :
+
+			<div class="progress">
+				<a data-toggle="java" title="JAVA" data-content="중상">
+					<div class="progress-bar" role="progressbar" aria-valuenow="70"
+						aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+						<span class="sr-only"></span>
+					</div>
+				</a>
+			</div>
+
+			MySQL :
+			<div class="progress">
+				<a data-toggle="mysql" title="MySQL" data-content="중상">
+					<div class="progress-bar" role="progressbar" aria-valuenow="70"
+						aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+						<span class="sr-only"></span>
+					</div>
+				</a>
+			</div>
+
+			HTML / CSS :
+			<div class="progress">
+				<a data-toggle="html" title="HTML / CSS" data-content="중">
+					<div class="progress-bar" role="progressbar" aria-valuenow="70"
+						aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+						<span class="sr-only"></span>
+					</div>
+				</a>
+			</div>
+
+			Ajax / JQuery :
+			<div class="progress">
+				<a data-toggle="ajax" title="Ajax / JQuery" data-content="중">
+					<div class="progress-bar" role="progressbar" aria-valuenow="70"
+						aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+						<span class="sr-only"></span>
+					</div>
+				</a>
+			</div>
+
+			Spring :
+			<div class="progress">
+				<a data-toggle="spring" title="Spring" data-content="중">
+					<div class="progress-bar" role="progressbar" aria-valuenow="70"
+						aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+						<span class="sr-only"></span>
+					</div>
+				</a>
+			</div>
+
+			Python :
+			<div class="progress">
+				<a data-toggle="python" title="Python" data-content="하">
+					<div class="progress-bar" role="progressbar" aria-valuenow="70"
+						aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+						<span class="sr-only"></span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div id="project">
+			<h2>Project</h2>
+
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#project1">project1</a></li>
+				<li><a data-toggle="tab" href="#project2">proeject2</a></li>
+				<li><a data-toggle="tab" href="#project3">proeject3</a></li>
+			</ul>
+
+			<div class="tab-content">
+				<div id="project1" class="tab-pane fade in active">
+					<div>
+						<h3>주제</h3>
+						<p>
+							&nbsp;주제 : 쇼핑몰<br> &nbsp;제작 인원 : 1인<br>
+						</p>
+						<h3>사용 도구</h3>
+						<p>
+							&nbsp;사용 툴 : Eclipse, MySQL Workbench<br> &nbsp;사용 언어 :
+							Java, jsp, HTML, CSS, mySQL<br>
+						</p>
+						<h3>구현 방식</h3>
+						<p>
+							&nbsp;구현방식 : model-1 적용<br>
+						</p>
+						<h3>구현 기능</h3>
+						<p>
+							&nbsp;구현 기능 : 회원 CRUD, 게시판 CRUD, 장바구니 담기 <br> &nbsp;사용 API :
+							우편번호 API<br>
+						</p>
+						<h3>기타</h3>
+						<p>
+							&nbsp;GitHub : <a href="https://github.com/Dohyun-l/project_LDH"
+								target="_blank">https://github.com/Dohyun-l/project_LDH</a>
+						</p>
+						<div class="project_img">
+							<img src="img/project1/main.PNG"> <img
+								src="img/project1/join.PNG"> <img
+								src="img/project1/shop.PNG"> <img
+								src="img/project1/cart.PNG"> <img
+								src="img/project1/notice.PNG"> <img
+								src="img/project1/qna.PNG">
+						</div>
+					</div>
+
+
+				</div>
+				<div id="project2" class="tab-pane fade">
+					<div>
+						<h3>주제</h3>
+						<p>
+							&nbsp;주제 : 개발자커뮤니티<br> &nbsp;제작 인원 : 6인<br>
+						</p>
+						<h3>사용 도구</h3>
+						<p>
+							&nbsp;사용 툴 : Eclipse, MySQL Workbench<br> &nbsp;사용 언어 :
+							Java, jsp, HTML, CSS, mySQL<br>
+						</p>
+						<h3>구현 방식</h3>
+						<p>
+							&nbsp;구현방식 : model-2(MVC 패턴) 적용<br>
+						</p>
+						<h3>구현 기능</h3>
+						<p>
+							&nbsp;구현 기능 : 회원 CRUD, 게시판 CRUD, 팀(방)만들기, 팀 채팅 서비스, FullCalendar
+							활용, Workbench 이벤트 사용 <br> &nbsp;사용 API : 우편번호 API, 카카오/Git
+							로그인, 네이버 스마트 Editor<br>
+						</p>
+						<h3>기타</h3>
+						<p>
+							&nbsp;호스팅 : 카페24 사용<br> &nbsp;URL :<a
+								href="http://itwillbs7.cafe24.com/deco/main.us" target="_blank">
+								http://itwillbs7.cafe24.com/deco/main.us</a><br> &nbsp;GitHub :
+							<a href="https://github.com/Dohyun-l/ProjectDeCo" target="_blank">https://github.com/Dohyun-l/ProjectDeCo</a>
+						</p>
+
+						<div class="project_img">
+							<img src="img/project2/main.PNG"> <img
+								src="img/project2/mypage.PNG"> <img
+								src="img/project2/notice.PNG"> <img
+								src="img/project2/share.PNG"> <img
+								src="img/project2/team.PNG"> <img
+								src="img/project2/team_talk.PNG"> <img
+								src="img/project2/team_management.PNG">
+						</div>
+					</div>
+
+				</div>
+				<div id="project3" class="tab-pane fade">
+					<div>
+						<h3>주제</h3>
+						<p>
+							&nbsp;주제 : 쇼핑몰(클론 코딩)<br> &nbsp;제작 인원 : 3인<br>
+						</p>
+						<h3>사용 도구</h3>
+						<p>
+							&nbsp;사용 툴 : STS, MySQL Workbench<br> &nbsp;사용 언어 : Java,
+							jsp, HTML, CSS, mySQL<br>
+						</p>
+						<h3>구현 방식</h3>
+						<p>
+							&nbsp;구현방식 : Spring MVC 적용<br>
+						</p>
+						<h3>구현 기능</h3>
+						<p>
+							&nbsp;구현 기능 : 회원 CRUD, 게시판 CRUD, 관리자 시스템, 팝업창 기능, 장바구니 담기, 결제하기,
+							이메일 인증<br> &nbsp;사용 API : 우편번호 API, 카카오 로그인, 아임포트 결제<br>
+						</p>
+						<h3>기타</h3>
+						<p>
+							&nbsp;GitHub : <a href="https://github.com/Dohyun-l/jps"
+								target="_blank">https://github.com/Dohyun-l/jps</a>
+						</p>
+						<div class="project_img">
+							<img src="img/project3/admin_item.png"> <img
+								src="img/project3/admin_notice.png"> <img
+								src="img/project3/admin_popup.png"> <img
+								src="img/project3/admin_user.png"> <img
+								src="img/project3/item.png"> <img
+								src="img/project3/myinfo.png"> <img
+								src="img/project3/notice.png"> <img
+								src="img/project3/order.png">
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
 
 </body>
 </html>
