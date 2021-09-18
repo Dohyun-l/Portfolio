@@ -7,10 +7,12 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <link href="css/main.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -23,12 +25,12 @@
 			<li><a href="#project">Project</a></li>
 		</ul>
 
+		<h2>Profile</h2>
 		<div id="profile" class="row text-center">
-			<h2>Profile</h2>
-			<div id="profile_img" class="col-sm-4 col-md-5 col-lg-4">
+			<div id="profile_img" class="col-sm-3 col-md-5 col-lg-4">
 				<img src="img/leedohyun.jpg" width="100%" class="img-rounded">
 			</div>
-			<div id="profile_info" class="col-sm-8 col-md-7 col-lg-8 text-left">
+			<div id="profile_info" class="col-sm-9 col-md-7 col-lg-8 text-left">
 				<h3>정보</h3>
 				<p>
 					&nbsp;이름 : 이도현<br> &nbsp;생년월일 : 1995.12.04<br> &nbsp;이메일
@@ -51,8 +53,8 @@
 			</div>
 		</div>
 
+		<h2>Skills</h2>
 		<div id="skills">
-			<h2>Skills</h2>
 			<br> <br> JAVA :
 
 			<div class="progress">
@@ -114,8 +116,8 @@
 				</a>
 			</div>
 		</div>
+		<h2>Project</h2>
 		<div id="project">
-			<h2>Project</h2>
 
 			<ul class="nav nav-tabs">
 				<li class="active"><a data-toggle="tab" href="#project1">project1</a></li>
@@ -150,16 +152,73 @@
 								target="_blank">https://github.com/Dohyun-l/project_LDH</a>
 						</p>
 						<div class="project_img">
-							<img src="img/project1/main.PNG"> <img
-								src="img/project1/join.PNG"> <img
-								src="img/project1/shop.PNG"> <img
-								src="img/project1/cart.PNG"> <img
-								src="img/project1/notice.PNG"> <img
-								src="img/project1/qna.PNG">
+							<img src="img/project1/main.PNG" style="cursor: zoom-in"
+								onclick="document.getElementById('pro1-1').style.display='block'">
+							<div id="pro1-1" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project1/main.PNG" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project1/join.PNG" style="cursor: zoom-in"
+								onclick="document.getElementById('pro1-2').style.display='block'">
+							<div id="pro1-2" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project1/join.PNG" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project1/shop.PNG" style="cursor: zoom-in"
+								onclick="document.getElementById('pro1-3').style.display='block'">
+							<div id="pro1-3" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project1/shop.PNG" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project1/cart.PNG" style="cursor: zoom-in"
+								onclick="document.getElementById('pro1-4').style.display='block'">
+							<div id="pro1-4" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project1/cart.PNG" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project1/notice.PNG" style="cursor: zoom-in"
+								onclick="document.getElementById('pro1-5').style.display='block'">
+							<div id="pro1-5" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project1/notice.PNG" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project1/qna.PNG" style="cursor: zoom-in"
+								onclick="document.getElementById('pro1-6').style.display='block'">
+							<div id="pro1-6" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project1/qna.PNG" style="width: 100%">
+								</div>
+							</div>
 						</div>
 					</div>
-
-
 				</div>
 				<div id="project2" class="tab-pane fade">
 					<div>
@@ -191,16 +250,86 @@
 						</p>
 
 						<div class="project_img">
-							<img src="img/project2/main.PNG"> <img
-								src="img/project2/mypage.PNG"> <img
-								src="img/project2/notice.PNG"> <img
-								src="img/project2/share.PNG"> <img
-								src="img/project2/team.PNG"> <img
-								src="img/project2/team_talk.PNG"> <img
-								src="img/project2/team_management.PNG">
+
+							<img src="img/project2/main.PNG" style="cursor: zoom-in"
+								onclick="document.getElementById('pro2-1').style.display='block'">
+							<div id="pro2-1" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project2/main.PNG" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project2/mypage.PNG" style="cursor: zoom-in"
+								onclick="document.getElementById('pro2-2').style.display='block'">
+							<div id="pro2-2" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project2/mypage.PNG" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project2/notice.PNG" style="cursor: zoom-in"
+								onclick="document.getElementById('pro2-3').style.display='block'">
+							<div id="pro2-3" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project2/notice.PNG" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project2/share.PNG" style="cursor: zoom-in"
+								onclick="document.getElementById('pro2-4').style.display='block'">
+							<div id="pro2-4" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project2/share.PNG" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project2/team.PNG" style="cursor: zoom-in"
+								onclick="document.getElementById('pro2-5').style.display='block'">
+							<div id="pro2-5" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project2/team.PNG" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project2/team_talk.PNG" style="cursor: zoom-in"
+								onclick="document.getElementById('pro2-6').style.display='block'">
+							<div id="pro2-6" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project2/team_talk.PNG" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project2/team_management.PNG"
+								style="cursor: zoom-in"
+								onclick="document.getElementById('pro2-7').style.display='block'">
+							<div id="pro2-7" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project2/team_management.PNG" style="width: 100%">
+								</div>
+							</div>
 						</div>
 					</div>
-
 				</div>
 				<div id="project3" class="tab-pane fade">
 					<div>
@@ -228,29 +357,100 @@
 								target="_blank">https://github.com/Dohyun-l/jps</a>
 						</p>
 						<div class="project_img">
-							<img src="img/project3/admin_item.png"> <img
-								src="img/project3/admin_notice.png"> <img
-								src="img/project3/admin_popup.png"> <img
-								src="img/project3/admin_user.png"> <img
-								src="img/project3/item.png"> <img
-								src="img/project3/myinfo.png"> <img
-								src="img/project3/notice.png"> <img
-								src="img/project3/order.png">
+							<img src="img/project3/admin_item.png" style="cursor: zoom-in"
+								onclick="document.getElementById('pro3-1').style.display='block'">
+							<div id="pro3-1" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project3/admin_item.png" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project3/admin_notice.png" style="cursor: zoom-in"
+								onclick="document.getElementById('pro3-2').style.display='block'">
+							<div id="pro3-2" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project3/admin_notice.png" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project3/admin_popup.png" style="cursor: zoom-in"
+								onclick="document.getElementById('pro3-3').style.display='block'">
+							<div id="pro3-3" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project3/admin_popup.png" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project3/admin_user.png" style="cursor: zoom-in"
+								onclick="document.getElementById('pro3-4').style.display='block'">
+							<div id="pro3-4" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project3/admin_user.png" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project3/item.png" style="cursor: zoom-in"
+								onclick="document.getElementById('pro3-5').style.display='block'">
+							<div id="pro3-5" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project3/item.png" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project3/myinfo.png" style="cursor: zoom-in"
+								onclick="document.getElementById('pro3-6').style.display='block'">
+							<div id="pro3-6" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project3/myinfo.png" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project3/notice.png" style="cursor: zoom-in"
+								onclick="document.getElementById('pro3-7').style.display='block'">
+							<div id="pro3-7" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project3/notice.png" style="width: 100%">
+								</div>
+							</div>
+
+							<img src="img/project3/order.png" style="cursor: zoom-in"
+								onclick="document.getElementById('pro3-8').style.display='block'">
+							<div id="pro3-8" class="w3-modal"
+								onclick="this.style.display='none'">
+								<span
+									class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+								<div class="w3-modal-content w3-animate-zoom">
+									<img src="img/project3/order.png" style="width: 100%">
+								</div>
+							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
-
-
-
-
-
-
 		</div>
 	</div>
 
 	<script src="js/main.js"></script>
-
 </body>
 </html>
