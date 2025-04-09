@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>故 구디홀스 님 부고</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      width: 100%;
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+      font-family: 'Noto Sans KR', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 800px;
+      padding: 40px;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 200px;
+      border-radius: 10px;
+    }
+    .typewriter {
+      font-size: 20px;
+      line-height: 1.8;
+      white-space: pre-wrap;
+      overflow: hidden;
+      border-right: .15em solid #f1f1f1;
+      animation: typing 5s steps(100, end), blink-caret 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #f1f1f1 }
+    }
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 6px;
+      margin: 30px 0;
+    }
+    .calendar div {
+      padding: 10px;
+      background: #3a3a3a;
+      text-align: center;
+      border-radius: 4px;
+    }
+    .calendar .day-name {
+      background: #555;
+      font-weight: bold;
+      color: #ddd;
+    }
+    .calendar .highlight {
+      background: #c62828;
+      color: white;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .qr {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .qr img {
+      width: 160px;
+      height: 160px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.jpeg" class="logo" alt="홀스 로고">
+    <div class="typewriter" id="text"></div>
+
+    <div class="calendar">
+      <div class="day-name">일</div><div class="day-name">월</div><div class="day-name">화</div>
+      <div class="day-name">수</div><div class="day-name">목</div><div class="day-name">금</div><div class="day-name">토</div>
+      <div></div><div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+      <div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div class="highlight">12</div>
+      <div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div>
+      <div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div>
+      <div>27</div><div>28</div><div>29</div><div>30</div>
+    </div>
+
+    <iframe src="https://map.naver.com/v5/search/서울특별시%20디지털로32나길%2022%20302호" allowfullscreen></iframe>
+
+    <div class="qr">
+      <p>조문 및 문의: 카카오톡 오픈채팅</p>
+      <a href="https://open.kakao.com/o/gIlSKjld" target="_blank">
+        <img src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://open.kakao.com/o/gIlSKjld" alt="카카오톡 오픈채팅 QR코드">
+      </a>
+    </div>
+
+    <div class="footer">삼가 고인의 명복을 빕니다.</div>
+  </div>
+
+  <script>
+    const message = `
+故 구디홀스 님께서 2025년 4월 9일 오전에 별세하셨습니다.
+
+슬픔 속에 이 소식을 전하며, 고인을 추모해주시길 바랍니다.
+
+상주: 엄정현, 양호연
+장례식장: 서울특별시 구로구 디지털로32나길 22, 302호
+발인: 2025년 4월 12일 (토) 오후 6시 30분
+장지: 서울특별시 난우길 22
+`;
+    let i = 0;
+    function typeWriter() {
+      if (i < message.length) {
+        document.getElementById("text").innerHTML += message.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      }
+    }
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>
